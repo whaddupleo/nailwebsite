@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Oswald"
+}
+
+:root {
+    --bg-color: white;
+    --second-bg-color: rgb(188, 122, 133);
+    --text-color: black;
+    --main-color: #0d3677;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    padding: 4rem 15%;
+    background: rgba(167, 132, 132, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+
+}
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    color: var(--main-color);
+    transform: scale(1.1);
+}
+
+.navbar a{
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 15%;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+.home-content h1{
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-content h3{
+    margin: 1rem 0;
+    font-size: 4rem
+}
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.home-img img{
+    width: 32vw;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.4s ease-in-out;
+    border-radius: 30px;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 25px var(--main-color),
+                0 0 100px var(--main-color);
+}
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+
+.booking{
+    background-color: var(--bg-color);
+}
+
+.booking h2{
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.booking form{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+.booking form .input-box input,
+.booking form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border-radius: 2rem;
+    border: 2px solid var(--main-color);
+    margin: 1.5rem 0;
+    resize: none;
+}
+
