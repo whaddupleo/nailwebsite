@@ -8,10 +8,13 @@
 }
 
 :root {
-    --bg-color: white;
-    --second-bg-color: rgb(188, 122, 133);
-    --text-color: black;
-    --main-color: #0d3677;
+    --yellow: #ffc567;
+    --pink: #fb7da8;
+    --purple: #552cb7;
+    --blue: #058cd7;
+
+    --red: #fd5a46;
+    --green: #00995e;
 }
 
 html {
@@ -19,9 +22,19 @@ html {
     overflow-x: hidden;
 }
 
+span{
+    background: linear-gradient(
+        270deg,
+        var(--heading-color) 10%,
+        var(--second-heading-color) 100%
+    );
+    background-clip: text;
+    color: transparent;
+}
+
 body{
-    background: var(--bg-color);
-    color: var(--text-color);
+    background: var(--blue);
+    align-items: center;
 }
 
 .header {
@@ -29,19 +42,23 @@ body{
     width: 100%;
     top: 0%;
     left: 0%;
-    padding: 4rem 15%;
-    background: rgba(167, 132, 132, 0.3);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: var(--pink);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 999;
+    border-bottom: 0.5rem solid;
 
 }
 
 .logo{
-    font-size: 3rem;
-    color: var(--text-color);
+    font-family: "Pacifico";
+    font-size: 2rem;
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -82,7 +99,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    text-align: right;
+    text-align: left;
 }
 .home-content h1{
     font-size: 8rem;
@@ -113,11 +130,31 @@ section{
                 0 0 100px var(--main-color);
 }
 .heading{
+    color: var(--heading-color);
+    font-family: Pacifico;
     text-align: center;
     font-size: 7rem;
     margin: 5rem 0;
 }
 
+.prices{
+        background-color: var(--second-bg-color);
+}
+.price-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.info-card{
+    border-width: 1rem;
+}
+
+.info-card img{
+    border: 5px solid #080800;
+    border-radius: 2rem;
+}
 .booking{
     background-color: var(--bg-color);
 }
