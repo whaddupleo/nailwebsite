@@ -1,188 +1,42 @@
-* {
+body {
+    font-family: "Faculty Glyphic";
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    font-family: "Oswald"
 }
 
-:root {
-    --yellow: #ffc567;
-    --pink: #fb7da8;
-    --purple: #552cb7;
-    --blue: #058cd7;
-
-    --red: #fd5a46;
-    --green: #00995e;
-}
-
-html {
-    font-size: 60%;
-    overflow-x: hidden;
-}
-
-span{
-    background: linear-gradient(
-        270deg,
-        var(--heading-color) 10%,
-        var(--second-heading-color) 100%
-    );
-    background-clip: text;
-    color: transparent;
-}
-
-body{
-    background: var(--blue);
-    align-items: center;
-}
-
-.header {
-    position: fixed;
-    width: 100%;
-    top: 0%;
-    left: 0%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background: var(--pink);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 999;
-    border-bottom: 0.5rem solid;
-
-}
-
-.logo{
-    font-family: "Pacifico";
-    font-size: 2rem;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.logo:hover{
-    color: var(--main-color);
-    transform: scale(1.1);
-}
-
-.navbar a{
-    font-size: 3rem;
-    color: var(--text-color);
-    margin-left: 4rem;
-    font-weight: 400;
-    transition: 0.3s ease-in-out;
+body a {
+    color: black;
     border-bottom: 3px solid transparent;
 }
 
-.navbar a:hover{
-    color: var(--main-color);
-    border-bottom: 3px solid var(--main-color);
+body a:hover {
+    color: grey;
 }
 
-section{
-    min-height: 100vh;
-    padding: 10rem 15%;
+body a:active {
+    color: black;
 }
 
-.home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15rem;
+#logo {
+    border: 3px solid black;
 }
-
-.home-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: left;
-}
-.home-content h1{
-    font-size: 8rem;
-    font-weight: 700;
-    margin-top: 1.5rem;
-    line-height: 1;
-}
-
-.home-content h3{
-    margin: 1rem 0;
-    font-size: 4rem
-}
-.home-content p{
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.8;
-}
-
-.home-img img{
-    width: 32vw;
-    box-shadow: 0 0 25px var(--main-color);
-    transition: 0.4s ease-in-out;
-    border-radius: 30px;
-}
-.home-img img:hover{
-    box-shadow: 0 0 25px var(--main-color),
-                0 0 25px var(--main-color),
-                0 0 100px var(--main-color);
-}
-.heading{
-    color: var(--heading-color);
-    font-family: Pacifico;
+h1 {
     text-align: center;
-    font-size: 7rem;
-    margin: 5rem 0;
+    margin-top:0;
+
+}
+h1 a{
+    border-bottom:  3px solid transparent;
 }
 
-.prices{
-        background-color: var(--second-bg-color);
-}
-.price-services {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15rem;
+header {
+    background-color: rgba(127,55,55,0.5);
+    border-bottom: 3px solid black;
 }
 
-.info-card{
-    border-width: 1rem;
-}
-
-.info-card img{
-    border: 5px solid #080800;
-    border-radius: 2rem;
-}
-.booking{
-    background-color: var(--bg-color);
-}
-
-.booking h2{
-    margin-bottom: 3rem;
-    color: var(--text-color);
-}
-
-.booking form{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    gap: 3rem;
-    margin: 5rem 0;
-    text-align: center;
-}
-
-.booking form .input-box input,
-.booking form textarea{
+.navbar {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     width: 100%;
-    padding: 2.5rem;
-    font-size: 1.8rem;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    border-radius: 2rem;
-    border: 2px solid var(--main-color);
-    margin: 1.5rem 0;
-    resize: none;
+    border: 3px solid black;
 }
-
