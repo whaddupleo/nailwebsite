@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Josefin Sans";
+}
+
+section {
+    padding-top: 7vh;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6vh;
+    min-height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fcdce1;
+    border-bottom: 3px solid #080808;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar li a, #social-links a{
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover, #social-links a:hover{
+    color: #59194f;
+}
+
+#home-btn, #book-btn{
+    background-color: #c4dfe5;
+    padding: 0.5rem 0.7rem;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+    border: 1px solid black;
+}
+
+#home-btn:hover, #book-btn:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar{
+    list-style: none;
+    padding: 0;
+
+}
+.navbar li {
+    display: inline-block;
+    margin: 0 3em;
+}
+
+
+#services {
+    background-color: #f0d9ef;
+}
+
+#socials {
+    background-color: #f0d9ef;
+}
+
+.info-card {
+    height: 80vh;
+    width: 65vw;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+#main-section, #pricing-section, #booking-section{
+    background-color: #ffe6bb;
+}
+
+#services-section, #socials-section {
+    background-color: #e9ecce;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #fcdce1;
+}
+
+footer p{
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.social-links {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    padding: 20px 3rem;
+    color: black;
+    text-decoration: none;
+}
+
