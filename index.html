@@ -8,43 +8,65 @@
     </head>
     <body>
         <header>
-            <a href="#home" id="home-btn">@GlossedByTrish</a>
+            <div class="header-btn"><a class="header-link" href="#home" id="home-btn">@GlossedByTrish</a></div>
+            
             <ul class="navbar">
                 <li>
-                    <a href="#services">Services</a>
+                    <a class="header-link" href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="#pricing">Pricing</a>
+                    <a class="header-link" href="#pricing">Pricing</a>
                 </li>
                 <li>
-                    <a href="#socials">Socials</a>
+                    <a class="header-link" href="#socials">Socials</a>
                 </li>
             </ul>
-            <a href="#booking"><button id="book-btn">Book Here</button></a>
+            <div class="header-btn"><a href="#booking"><button class="header-link" id="book-btn">Book Here</button></a></div>
         </header>
-        <section id="home">
-            <h1>Home Page Title</h1>
+        <section aria-labelledby="#home-title" role="region" id="home">
+            <h1 class="section-title" id="home-title">About Me</h1>
             <div class="info-card" id="main-section">
             </div>
         </section>
         <section id="services">
-            <h1>Services Page Title</h1>
+            <h1 class="section-title">Services</h1>
             <div class="info-card" id="services-section">
             </div>
         </section>
         <section id="pricing">
-            <h1>Pricing Page Title</h1>
+            <h1 class="section-title">Pricing</h1>
             <div class="info-card" id="pricing-section">
             </div>
         </section>
         <section id="socials">
-            <h1>Socials Page Title</h1>
+            <h1 class="section-title">Socials</h1>
             <div class="info-card" id="socials-section">
             </div>
         </section>
         <section id="booking">
-            <h1>Booking Page Title</h1>
+            <h1 class="section-title">Booking</h1>
             <div class="info-card" id="booking-section">
+                <form action="" method="post">
+                    <fieldset id="contact-info">
+                        <legend>Contact Info</legend>
+                        <label>
+                            Name:<input required id="name" name="name" type="text">
+                        <label>
+                            Email:<input required id="email" name="email" type="email" >
+                        </label>
+                        <label>
+                            Phone Number:<input id="tel-num" name="tel" type="tel">
+                        </label>
+                    </fieldset>
+                    <fieldset id="appointment-info">
+                        <legend>Appointment</legend>
+                        <label>
+                            Date & Time: <select>
+                                
+                            </select>
+                        </label>
+                    </fieldset>
+                </form>
             </div>
         </section>
         <footer>
