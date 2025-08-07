@@ -8,9 +8,13 @@
 }
 
 section {
-    padding-top: 7vh;
+    padding-top: 9vh;
     width: 100%;
     height: 100vh;
+}
+
+.section-title {
+    text-align: center;
 }
 
 header {
@@ -18,18 +22,30 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6vh;
+    height: 8vh;
     min-height: 45px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #fcdce1;
     border-bottom: 3px solid #080808;
 }
 
+.header-btn {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.header-link {
+    font-size: 1.5rem;
+}
+
 header a{
     text-decoration: none;
     color: black;
+    
 }
 
 .navbar li a, #social-links a{
@@ -41,6 +57,7 @@ header a{
 }
 
 #home-btn, #book-btn{
+
     background-color: #c4dfe5;
     padding: 0.5rem 0.7rem;
     border-radius: 30px;
@@ -59,11 +76,17 @@ h1 {
 .navbar{
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    width: 20vw;
+
 
 }
 .navbar li {
     display: inline-block;
-    margin: 0 3em;
+
+    margin: 0;
 }
 
 
@@ -115,3 +138,12 @@ footer p{
     text-decoration: none;
 }
 
+#test-container {
+    background-color: #080808;
+    width: 50%;
+    height: 100%;
+}
+
+header>a {
+    border: 1px solid black;
+}
